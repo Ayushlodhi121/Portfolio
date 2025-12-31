@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <nav class="navbar" role="navigation" aria-label="Main navigation menu">
+      <div class="container">
+        <a href="#hero" class="logo">
+          <span class="highlight">Portfolio.</span>
+        </a>
+
+        <div class="nav-links" id="navLinks" role="menubar">
+          <a href="#about" role="menuitem">About</a>
+          <a href="#skills" role="menuitem">Skills</a>
+          <a href="#projects" role="menuitem">Projects</a>
+          <a href="#contact" role="menuitem">Contact</a>
+
+          <button
+            id="theme-toggle"
+            aria-label="Toggle dark/light theme"
+            role="switch"
+            aria-checked="false"
+            type="button"
+          >
+            <span class="icon-swap">
+              <i class="fas fa-sun" aria-hidden="true"></i>
+              <i
+                class="fas fa-moon"
+                aria-hidden="true"
+                style="display: none"
+              ></i>
+            </span>
+          </button>
+        </div>
+
+        <button
+          class="burger-menu"
+          id="burgerMenu"
+          aria-label="Toggle navigation menu"
+          aria-controls="navLinks"
+          aria-expanded="false"
+          type="button"
+        >
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </button>
+      </div>
+    </nav>
+
+    <main id="main-content">
+      <section id="hero" class="hero-section" aria-labelledby="hero-heading">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-text">
+              <h1 id="hero-heading">Ayush Lodhi</h1>
+              <p class="lead">
+                I am a backend engineer build secure, scalable backend systems
+                and high-performance APIs using modern
+                <span id="dynamic-text" class="highlight">Java</span>
+                technologies.
+              </p>
+              <div class="social-links">
+                <a
+                  href="https://github.com/Marjory00"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="GitHub Profile (Opens in new tab)"
+                  ><i class="fab fa-github" aria-hidden="true"></i
+                ></a>
+                <a
+                  href="https://linkedin.com/in/marjorym"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="LinkedIn Profile (Opens in new tab)"
+                  ><i class="fab fa-linkedin" aria-hidden="true"></i
+                ></a>
+                <a
+                  href="mailto:marjory.dev@gmail.com"
+                  aria-label="Send Email to marjory.dev@gmail.com"
+                  ><i class="fas fa-envelope" aria-hidden="true"></i
+                ></a>
+              </div>
+              <a href="#projects" class="btn btn-primary"
+                >View Projects
+                <i class="fas fa-arrow-right" aria-hidden="true"></i
+              ></a>
+              <a
+                href="/assets/frontend-resume.pdf"
+                target="_blank"
+                class="btn btn-secondary"
+                rel="noopener noreferrer"
+                aria-label="Download Resume (PDF, Opens in new tab)"
+              >
+                Download Resume
+                <i class="fas fa-download" aria-hidden="true"></i>
+              </a>
+            </div>
+            <div class="hero-image">
+              <!-- <img
+                src="https://images.pexels.com/photos/3769021/pexels-photo-3769021.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=300&h=300"
+                alt="Professional portrait of a woman in her 40s smiling"
+                class="profile-pic"
+                width="300"
+                height="300"
+                loading="eager"
+                myimage.jpg?auto=compress&cs=tinysrgb&dpr=1&w=300&h=300
+              /> -->
+              <img
+                src="myimage.jpg"
+                class="profile-pic"
+                width="100"
+                height="100"
+                loading="eager"
+              />
+              <img src="" alt="">
+            </div>
+          </div>
+          </div>
+      </section>
+
+      <hr />
+
+      <section id="about" class="about-section" aria-labelledby="about-heading">
+        <div class="container">
+          <h2 id="about-heading">About Me</h2>
+          <div class="about-content">
+            <img
+              src="https://images.unsplash.com/photo-1519389950473-47ba0277781c?auto=format&fit=crop&w=900&q=80"
+              alt="Developer team collaborating on a desk"
+              class="about-img"
+              width="500"
+              height="350"
+              loading="lazy"
+            />
+            <div>
+              <h3>My Philosophy</h3>
+              <p>
+                I’m a final-year B.Tech CSE student at Babulal Tarabai Institute
+                of Research and Technology (2022–2026). I’m focused on backend
+                development and enjoy building reliable and scalable
+                applications using Java, Spring, and MySQL.
+              </p>
+              <p>
+                My skills include Java (Core & Advanced), Spring, SQL/MySQL, and
+                basic HTML, CSS, and JavaScript. I work with tools like Eclipse,
+                IntelliJ, and VS Code.
+              </p>
+              <p>
+                With 65%+ academic performance, I’m always learning new things
+                and working on projects to improve my backend development
+                skills. I like writing clean code and creating applications that
+                solve real problems.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <section
+        id="skills"
+        class="skills-section"
+        aria-labelledby="skills-heading"
+      >
+        <div class="container">
+          <h2 id="skills-heading">My Skills</h2>
+          <div class="skills-grid">
+            <div class="skill-category">
+              <h3>Languages</h3>
+              <ul role="list" aria-label="Programming Languages">
+                <li>
+                  <i class="fab fa-html5" aria-hidden="true"></i>
+                  HTML5/CSS3/JavaScript
+                </li>
+                <li>
+                  <i class="fab fa-js-square" aria-hidden="true"></i>Java
+                  <span class="highlight"> / SQL / MySql</span>
+                </li>
+                <li>
+                  <i class="fab fa-html5" aria-hidden="true"></i>Data Structure
+                </li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Frameworks & Libraries</h3>
+              <ul role="list" aria-label="Frameworks and Libraries">
+                <li>
+                  <i class="fab fa-react" aria-hidden="true"></i> Spring /
+                  SpringBoot
+                </li>
+                <li>
+                  <i class="fab fa-angular" aria-hidden="true"></i> Hibernate
+                </li>
+                <li>
+                  <i class="fab fa-vuejs" aria-hidden="true"></i> Adv Java
+                </li>
+
+                <li>
+                  <i class="fab fa-sass" aria-hidden="true"></i> Bootstrap
+                </li>
+              </ul>
+            </div>
+            <div class="skill-category">
+              <h3>Tools & Workflow</h3>
+              <ul role="list" aria-label="Tools and Workflow">
+                <li>
+                  <i class="fab fa-git-alt" aria-hidden="true"></i> Git / GitHub
+                  <span class="highlight"> </span>
+                </li>
+                <li>
+                  <i class="fas fa-terminal" aria-hidden="true"></i> Eclipse
+                </li>
+                <li>
+                  <i class="fas fa-cubes" aria-hidden="true"></i>
+                  <span class="highlight">IntelliJ</span>
+                </li>
+                <li>
+                  <i class="fas fa-universal-access" aria-hidden="true"></i> VS
+                  Code
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+      <section
+        id="projects"
+        class="projects-section"
+        aria-labelledby="projects-heading"
+      >
+        <div class="container">
+          <h2 id="projects-heading">Featured Projects</h2>
+          <div class="projects-grid">
+            <div class="project-card" role="article">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=700&q=80"
+                  alt="Screenshot of the Interactive Quiz App showing live question timer"
+                  loading="lazy"
+                  width="300"
+                  height="200"
+                />
+              </figure>
+              <h3>Interactive Quiz App</h3>
+              <p>
+                A highly accessible, responsive quiz application with live
+                scoring, built using React and Context API for state management.
+              </p>
+              <div
+                class="project-tech"
+                role="list"
+                aria-label="Technologies used"
+                tabindex="0"
+              >
+                <span>React</span>
+                <span>Context API</span>
+                <span>CSS Modules</span>
+                <span>Jest/Testing</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://quiz-app-demo.vercel.app"
+                  target="_blank"
+                  class="btn btn-small"
+                  rel="noopener noreferrer"
+                  >Live Demo
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i
+                ></a>
+                <a
+                  href="https://github.com/Marjory00/quiz-app"
+                  target="_blank"
+                  class="btn btn-small"
+                  rel="noopener noreferrer"
+                  >Source Code <i class="fab fa-github" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-card" role="article">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1607746882042-944635dfe10e?auto=format&fit=crop&w=700&q=80"
+                  alt="Screenshot of the E-commerce Product Page UI, showing a shopping cart icon."
+                  loading="lazy"
+                  width="300"
+                  height="200"
+                />
+              </figure>
+              <h3>E-commerce Product Page</h3>
+              <p>
+                A modern, modular shopping interface with dynamic cart
+                management, optimized for all screen sizes and built with
+                vanilla JS for speed.
+              </p>
+              <div
+                class="project-tech"
+                role="list"
+                aria-label="Technologies used"
+                tabindex="0"
+              >
+                <span>HTML5</span>
+                <span>CSS3</span>
+                <span>JavaScript (Vanilla)</span>
+                <span>Web APIs</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://ecommerce-demo.vercel.app"
+                  target="_blank"
+                  class="btn btn-small"
+                  rel="noopener noreferrer"
+                  >Live Demo
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i
+                ></a>
+                <a
+                  href="https://github.com/Marjory00/ecommerce-page"
+                  target="_blank"
+                  class="btn btn-small"
+                  rel="noopener noreferrer"
+                  >Source Code <i class="fab fa-github" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-card" role="article">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1516574187841-cb9cc2ca948b?auto=format&fit=crop&w=700&q=80"
+                  alt="Weather Dashboard showing temperature and forecast charts"
+                  loading="lazy"
+                  width="300"
+                  height="200"
+                />
+              </figure>
+              <h3>Weather Dashboard</h3>
+              <p>
+                A robust single-page weather app built with Vue.js, fetching and
+                displaying real-time data from a third-party REST API
+                (OpenWeather).
+              </p>
+              <div
+                class="project-tech"
+                role="list"
+                aria-label="Technologies used"
+                tabindex="0"
+              >
+                <span>Vue.js</span>
+                <span>Axios</span>
+                <span>REST API</span>
+                <span>Tailwind CSS</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://weather-dashboard.vercel.app"
+                  target="_blank"
+                  class="btn btn-small"
+                  rel="noopener noreferrer"
+                  >Live Demo
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i
+                ></a>
+                <a
+                  href="https://github.com/Marjory00/weather-dashboard"
+                  target="_blank"
+                  class="btn btn-small"
+                  rel="noopener noreferrer"
+                  >Source Code <i class="fab fa-github" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+
+            <div class="project-card" role="article">
+              <figure>
+                <img
+                  src="https://images.unsplash.com/photo-1508780709619-79562169bc64?auto=format&fit=crop&w=700&q=80"
+                  alt="Screenshot of the Personal Blog Platform, showing article previews"
+                  loading="lazy"
+                  width="300"
+                  height="200"
+                />
+              </figure>
+              <h3>Static Blog Platform</h3>
+              <p>
+                A static blog platform optimized for SEO and performance using
+                Jekyll, demonstrating mastery of server-side generated content.
+              </p>
+              <div
+                class="project-tech"
+                role="list"
+                aria-label="Technologies used"
+                tabindex="0"
+              >
+                <span>Jekyll (Ruby)</span>
+                <span>Markdown</span>
+                <span>HTML/CSS</span>
+                <span>SEO Optimization</span>
+              </div>
+              <div class="project-links">
+                <a
+                  href="https://blog-platform-demo.vercel.app"
+                  target="_blank"
+                  class="btn btn-small"
+                  rel="noopener noreferrer"
+                  >Live Demo
+                  <i class="fas fa-external-link-alt" aria-hidden="true"></i
+                ></a>
+                <a
+                  href="https://github.com/Marjory00/blog-platform"
+                  target="_blank"
+                  class="btn btn-small"
+                  rel="noopener noreferrer"
+                  >Source Code <i class="fab fa-github" aria-hidden="true"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+      <section
+        id="contact"
+        class="contact-section"
+        aria-labelledby="contact-heading"
+      >
+        <div class="container">
+          <h2 id="contact-heading">Contact Me</h2>
+          <p class="contact-intro">
+            Actively seeking Java developer job opportunities to apply my skills
+            and grow in a professional environment.
+          </p>
+          <address class="contact-details">
+            <p>
+              <i class="fas fa-envelope" aria-hidden="true"></i> Email:
+              <!-- <a href="mailto:marjory.dev@gmail.com">ayushlodhi735@gmail.com</a> -->
+              <a href="mailto:marjory.dev@gmail.com">ayushlodhi735@gmail.com</a>
+            </p>
+            <p>
+              <i class="fab fa-linkedin" aria-hidden="true"></i> LinkedIn:
+              <a
+                href="https://www.linkedin.com/in/ayush-lodhi-144a47279/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >linkedin.com</a
+              >
+            </p>
+            <p>
+              <i class="fab fa-github" aria-hidden="true"></i> GitHub:
+              <a
+                href="https://github.com/Ayushlodhi121"
+                target="_blank"
+                rel="noopener noreferrer"
+                >github.com</a
+              >
+            </p>
+          </address>
+          <div class="contact-actions">
+            <a
+              href="mailto:marjory.dev@gmail.com"
+              class="btn btn-primary btn-large"
+              >Send a Message
+              <i class="fas fa-paper-plane" aria-hidden="true"></i
+            ></a>
+            <a
+              href="/assets/frontend-resume.pdf"
+              target="_blank"
+              class="btn btn-secondary btn-large"
+              rel="noopener noreferrer"
+              aria-label="Download Resume (PDF, Opens in new tab)"
+            >
+              Download Resume
+              <i class="fas fa-file-download" aria-hidden="true"></i>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer role="contentinfo">
+      <div class="container">
+        <div class="footer-content">
+          <p>
+            <span id="current-year">2026</span> Ayush Lodhi  
+          </p>
+          <div class="footer-links">
+            <a href="#about">About</a> | <a href="#projects">Projects</a> |
+            <a href="#contact">Contact</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="index.js"></script>
+  </body>
+</html>
